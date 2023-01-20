@@ -40,7 +40,7 @@ closeButton.addEventListener('click', e =>{
     e.preventDefault();
 
     document.querySelector('#screen').style['animation-name'] = 'fade-in';
-    document.querySelector('body').style['overflow'] = 'hidden';
+    document.querySelector('body').style['overflow'] = 'auto';
 
     setTimeout(() =>{
         document.querySelector('#details-container').style.display = 'none';
