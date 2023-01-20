@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies</title>
+    <title>My Favorites Characters</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Work+Sans&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -39,7 +46,7 @@
         <div class="menu-open-close">
           <div class="header">
             <a href="#" class="logo"><img src="img/logo.svg" alt="" /></a>
-            <a href="#">
+            <a href="#" id="buttonOpenCloseMenu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -52,7 +59,7 @@
               </svg>
             </a>
           </div>
-          <div id="menu-mobile-items" class="menu-mobile-close">
+          <div id="menu-mobile-items" class="menu-mobile-closed">
             <ul>
               <li><a href="#">HOME</a></li>
               <li><a href="#">WORK</a></li>
@@ -66,7 +73,7 @@
       <!--MAIN VIDEOS-->
       <section class="main-video">
         <div class="video">
-          <video src="video/video.mp4" autoplay loop></video>
+          <video src="video/video.mp4" type="video/mp4" autoplay loop></video>
         </div>
       </section>
 
@@ -90,7 +97,7 @@
       <section>
         <h2>WORK</h2>
         <div class="grid work">
-          <!--ITEM-->
+          <!--ITEM 1-->
           <a href="#" class="item" data-id="0">
             <img src="img/portada-01.jpg" width="100%" alt="" />
             <div class="bg-hover">
@@ -100,7 +107,7 @@
               </div>
             </div>
           </a>
-          <!--ITEM-->
+          <!--ITEM 2-->
           <a href="#" class="item" data-id="1">
             <img src="img/portada-02.jpg" width="100%" alt="" />
             <div class="bg-hover">
@@ -110,7 +117,7 @@
               </div>
             </div>
           </a>
-          <!--ITEM-->
+          <!--ITEM 3-->
           <a href="#" class="item" data-id="2">
             <img src="img/portada-03.jpg" width="100%" alt="" />
             <div class="bg-hover">
@@ -141,6 +148,16 @@
             </div>
           </a>
           <!--ITEM-->
+          <a href="#" class="item" data-id="5">
+            <img src="img/portada-06.jpg" width="100%" alt="" />
+            <div class="bg-hover">
+              <div class="info">
+                <div class="title">VIAJE AL ESPACIO</div>
+                <div class="customer">SPACE X</div>
+              </div>
+            </div>
+          </a>
+          <!--ITEM-->
           <a href="#" class="item" data-id="6">
             <img src="img/portada-07.jpg" width="100%" alt="" />
             <div class="bg-hover">
@@ -163,16 +180,6 @@
           <!--ITEM-->
           <a href="#" class="item" data-id="8">
             <img src="img/portada-09.jpg" width="100%" alt="" />
-            <div class="bg-hover">
-              <div class="info">
-                <div class="title">VIAJE AL ESPACIO</div>
-                <div class="customer">SPACE X</div>
-              </div>
-            </div>
-          </a>
-          <!--ITEM-->
-          <a href="#" class="item" data-id="9">
-            <img src="img/portada-10.jpg" width="100%" alt="" />
             <div class="bg-hover">
               <div class="info">
                 <div class="title">VIAJE AL ESPACIO</div>
@@ -310,52 +317,54 @@
       <div class="nav-bar">
         <div></div>
         <div class="nav-buttons">
-          <a href="#">
+          <a href="#" id="prev-button">
             <span class="material-icons md-48"> arrow_back_ios </span>
           </a>
-          <a href="#">
+          <a href="#" id="next-button">
             <span class="material-icons md-48"> arrow_forward_ios </span>
           </a>
         </div>
         <div class="close">
-            <a href="#">
-                <span class="material-icons md-48">
-                    close
-                </span>
-            </a>
+          <a href="#" id="close-button">
+            <span class="material-icons md-48"> close </span>
+          </a>
         </div>
       </div>
       <div class="items">
-
-
         <div class="item item-hide">
-            <div class="main-image">
-                <img src="img/portada-01.jpg" alt="">
-            </div>
-            <div class="title">
-                <h2>VIAJE AL ESPACIO</h2>
-            </div>
-            <div class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate, esse nihil ipsa officiis eius et ducimus quae id dignissimos velit eligendi repellat repellendus, nesciunt officia iure non voluptatem dolores.
-            </div>
+          <div class="main-image">
+            <img src="img/portada-01.jpg" alt="" />
+          </div>
+          <div class="title">
+            <h2>VIAJE AL ESPACIO</h2>
+          </div>
+          <div class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            voluptate, esse nihil ipsa officiis eius et ducimus quae id
+            dignissimos velit eligendi repellat repellendus, nesciunt officia
+            iure non voluptatem dolores.
+          </div>
         </div>
 
         <div class="item item-hide">
-            <div class="main-image">
-                <img src="img/portada-02.jpg" alt="">
-            </div>
-            <div class="title">
-                <h2>VIAJE AL ESPACIO</h2>
-            </div>
-            <div class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate, esse nihil ipsa officiis eius et ducimus quae id dignissimos velit eligendi repellat repellendus, nesciunt officia iure non voluptatem dolores.
-            </div>
+          <div class="main-image">
+            <img src="img/portada-02.jpg" alt="" />
+          </div>
+          <div class="title">
+            <h2>VIAJE AL ESPACIO</h2>
+          </div>
+          <div class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            voluptate, esse nihil ipsa officiis eius et ducimus quae id
+            dignissimos velit eligendi repellat repellendus, nesciunt officia
+            iure non voluptatem dolores.
+          </div>
         </div>
-
-
       </div>
     </div>
     <!--SCREEN-->
     <div id="screen"></div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
